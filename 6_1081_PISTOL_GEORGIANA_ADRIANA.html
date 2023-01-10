@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="./lib/jquery.min.js" type="text/javascript"></script>
+	<script src="6_1081_PISTOL_GEORGIANA_ADRIANA.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="6_1081_PISTOL_GEORGIANA_ADRIANA.css">
+	<title>SVG editor</title>
+</head>
+<body>
+	<div id="main_header" class="menu_header">
+		<img src="https://www.freepnglogos.com/uploads/cursor-png/cursor-icon-download-icons-5.png" width="20px" height="25px" id="mode" />
+		<img src="https://cdn1.iconfinder.com/data/icons/arrow-ui-3-2/128/Artboard_1-512.png" width="20px" height="25px" id="remove" />
+
+		<span style="font-family:Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 25px; font-style: italic;">
+			Editor SVG
+		</span>
+	</div>
+	<div id="button_header" class="menu_header">
+		<input type="button" id="rect_button" value="Rectangle" />
+		<input type="button" id="ellipse_button" value="Ellipse" />
+		<input type="button" id="line_button" value="Line" />
+		<input type="button" id="polygon_button" value="Polygon" />
+		<input type="button" id="text_button" value="Text" />
+	</div>
+	<div id="properties_header" class="menu_header">
+		<label for="color_button">Color: </label>
+		<input type="color" id="color_button" value="#DEB887" />
+		<label for="first_point" id="first_label">x: </label>
+		<input type="text" id="first_point" />
+		<label for="second_point" id="second_label">y: </label>
+		<input type="text" id="second_point" />
+		<label for="third_point" id="third_label">width: </label>
+		<input type="text" id="third_point" />
+		<label for="fourth_point" id="fourth_label">height: </label>
+		<input type="text" id="fourth_point" />
+	</div>
+	<div id="text_header" style="display: none;" class="menu_header" >
+		<label for="input_text" id="text_label">Text: </label>
+		<input type="text" id="input_text" style="width: 150px;"/>
+		<img src="https://cdn0.iconfinder.com/data/icons/android-application/32/Auto_Rotate-512.png"
+			width="20px" height="20px" id="rotate" />
+	</div>
+	<svg id="svg_edit" >
+		<ellipse id="dashedEllipse" style="display: none;" ></ellipse>
+		<line id="dashedLine" style="display: none;" ></line>
+		<rect id="dashedRect" style="display:none;" ></rect> 
+		<polygon id="dashedPolygon" style="display: none;" ></polygon>
+		<text id="dashedText" style="display: none;" ></text>
+		<svg id="drawElem" ></svg>
+	</svg>
+</body>
+</html>

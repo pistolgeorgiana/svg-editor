@@ -1,0 +1,114 @@
+.menu_header {
+	background-color: beige;
+	color: black;
+	border: none;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 4px;
+}
+
+.menu_header img:hover {
+	cursor: pointer;
+}
+
+img {
+	padding-top: 10px; 
+	padding-right: 10px;
+}
+
+svg {
+	background-color: #e7e7e7;
+	width: 100%;
+	height: 650px;
+	cursor: crosshair;
+}
+
+svg .clicked {
+	fill: gray;
+	stroke: black;
+}
+
+svg rect {
+	fill: burlywood;
+	stroke: black;
+	fill-opacity: 0.1;
+	stroke-opacity: 0.3;
+}
+
+svg #dashedRect {
+	stroke-opacity: 0.3;
+	fill: transparent;
+	stroke-dasharray: 3,4;
+	stroke: olive;
+}
+
+svg ellipse {
+	fill: burlywood;
+	stroke: black;
+	fill-opacity: 0.1;
+	stroke-opacity: 0.3;
+}
+
+svg #dashedEllipse {
+	stroke-opacity: 0.3;
+	fill: transparent;
+	stroke-dasharray: 3,4;
+	stroke: olive;
+}
+
+svg line {
+	stroke: black;
+	stroke-width: 5px;
+	stroke-opacity: 0.1;
+}
+
+svg #dashedLine {
+	stroke-opacity: 0.3;
+	stroke-dasharray: 3,4;
+	stroke: olive;
+}
+
+svg polygon {
+	fill: burlywood;
+	fill-opacity: 0.1;
+	stroke: black;
+	stroke-width: 2px;
+	stroke-opacity: 0.3;
+}
+
+svg text {
+	font: italic serif 60px;
+	fill: red;
+	stroke: black;
+	user-select: none;
+}
+
+#button_header {
+	text-align: center; 
+	fill: gray;
+	height: fit-content; 
+	padding-top: 10px; 
+	padding-bottom: 10px;
+}
+
+input[type='button'] {
+	border: solid bisque 3px;
+	border-radius: 20%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-style: oblique;
+	width: fit-content;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 40px;
+}
+
+input[type='text'] {
+	border: 2px dashed black;
+	width: 70px;
+	background-color: cornsilk;
+	border-radius: 3px;
+}
